@@ -5,20 +5,32 @@
 	<artifactId>sion-talent</artifactId>
 	<version>${sion-core.version}</version>
 	<packaging>war</packaging>
-	
 	<parent> 
 		<groupId>net.sion</groupId>
-		  <artifactId>sion-pom</artifactId>
-		  <version>1.3.3-SNAPSHOT</version>
+		<artifactId>sion-pom</artifactId>
+		<version>1.4.1-SNAPSHOT</version>
 	</parent> 
 	
 	<dependencies>
+		<dependency> 
+			<groupId>net.sion</groupId>
+			<artifactId>sion-core-desktop</artifactId>
+			<version>${sion-core.version}</version>
+			<type>war</type> 
+		</dependency>
 		<dependency>
 			<groupId>net.sion</groupId>
-		  	<artifactId>sion-core-all</artifactId>
-		  	<version>${sion-core.version}</version> 
-		  	<type>pom</type>
+			<artifactId>sion-core-desktop</artifactId>
+			<version>${sion-core.version}</version>
+			<classifier>classes</classifier>  
 		</dependency>
-	</dependencies>
+		<dependency> 
+			<groupId>net.sion</groupId>
+			<artifactId>sion-resource</artifactId>
+			<version>${sion-core.version}</version>
+			<type>war</type> 
+		</dependency>
 	
+		
+	</dependencies>
 </project>

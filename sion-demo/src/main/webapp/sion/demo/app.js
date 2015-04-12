@@ -38,8 +38,7 @@ Ext.application({
     name: 'sion.demo',
 
     launch: function() {
-        var win = Ext.create('sion.demo.view.Entrance');
-        win.show();
+        Ext.create('sion.demo.view.User', {renderTo: Ext.getBody()});
     }
 
 });

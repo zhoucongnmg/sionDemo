@@ -95,6 +95,7 @@ Ext.define('sion.demo.view.User', {
         var me = this,
             userMain = Ext.create(me.getNs()+'.view.UserMain');
         userMain.show();
+
     },
 
     onButtonClick1: function(button, e, eOpts) {

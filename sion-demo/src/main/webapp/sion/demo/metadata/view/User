@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|initialView": true,
         "designer|userClassName": "User",
         "height": 250,
         "title": "人员信息",
@@ -54,7 +55,8 @@
                                 "implHandler": [
                                     "var me = this,",
                                     "    userMain = Ext.create(me.getNs()+'.view.UserMain');",
-                                    "userMain.show();"
+                                    "userMain.show();",
+                                    ""
                                 ],
                                 "name": "click",
                                 "scope": "me"

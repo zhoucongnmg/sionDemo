@@ -49,8 +49,7 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    "var win = Ext.create('sion.demo.view.Entrance');",
-                    "win.show();"
+                    ""
                 ]
             },
             "name": "launch",

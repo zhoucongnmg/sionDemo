@@ -8,6 +8,6 @@ import org.springframework.data.annotation.Persistent;
 
 privileged aspect User_Roo_Mongo_Entity {
     
-    declare @type: User: @Persistent;
+    declare @type: PracticeUser: @Persistent;
     
 }
