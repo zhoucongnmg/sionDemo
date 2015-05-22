@@ -1,0 +1,654 @@
+{
+    "type": "Ext.tab.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "activeTab": 0,
+        "designer|userAlias": "mytabpanel",
+        "designer|userClassName": "MainTabPanel",
+        "height": null,
+        "itemId": "MyTabPanel"
+    },
+    "name": "MyTabPanel",
+    "designerId": "d47157ea-6bb5-4554-8eb6-15ba53c1be3c",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "html": null,
+                "iconCls": "s_icon_item_flag",
+                "layout": "vbox",
+                "title": "首页"
+            },
+            "name": "MyPanel1",
+            "configAlternates": {
+                "html": "string"
+            },
+            "designerId": "5ea3afdd-0cf0-44f9-b572-d50d9c3be2ec",
+            "cn": [
+                {
+                    "type": "Ext.tab.Tab",
+                    "reference": {
+                        "name": "tabConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "TabConfig",
+                    "designerId": "44bd5b41-95db-46c9-96f5-4b3ccec0e2a0"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": null,
+                        "bodyStyle": null,
+                        "border": null,
+                        "cls": null,
+                        "componentCls": null,
+                        "height": 350,
+                        "layout": "fit",
+                        "title": null
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "74512044-8d93-491f-b8e0-a330f57446c3",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "src": "http://localhost:8080/sion-talent/recruit_background.png"
+                            },
+                            "name": "MyImg4",
+                            "designerId": "64a864a2-d2aa-4b54-998c-9e54329145a0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": null,
+                        "bodyStyle": null,
+                        "componentCls": null,
+                        "container|align": "middle",
+                        "height": 400,
+                        "hidden": true,
+                        "layout": "hbox",
+                        "title": null,
+                        "width": null
+                    },
+                    "name": "MyPanel16",
+                    "designerId": "cff3bedd-64d5-44a0-9edb-c92044dbef72",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyStyle": [
+                                    "'background:#ffc; padding:10px;'"
+                                ],
+                                "container|columns": 3,
+                                "height": "100%",
+                                "layout": "table",
+                                "layout|flex": 1,
+                                "title": "",
+                                "width": "33%"
+                            },
+                            "name": "MyPanel19",
+                            "designerId": "14bf5c5a-4eca-41ee-bac3-1722e3930f69",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|columns": 3,
+                                        "height": 300,
+                                        "layout": "table",
+                                        "title": "求职者信息",
+                                        "width": 280
+                                    },
+                                    "name": "MyFieldSet",
+                                    "designerId": "23a70239-6fde-432d-8907-cc32ef76f159",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "s_icon_action_copy",
+                                                "layout|colspan": 3,
+                                                "text": "简历库"
+                                            },
+                                            "name": "MyButton15",
+                                            "designerId": "07d6a29c-0fae-4827-819f-13861e96f39c",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick",
+                                                        "implHandler": [
+                                                            " var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                                                            " var P1 = Ext.ComponentQuery.query('#ResumeInfoGrid')[0];",
+                                                            "    if(!P1){",
+                                                            "       P1 = Ext.create('sion.social.recruit.view.ResumeInfoGrid');",
+                                                            "       P1.iconCls = button.iconCls;",
+                                                            "       P1.title= button.text;",
+                                                            "       P1.closable = true;",
+                                                            "       tabs.add(P1);",
+                                                            "    }",
+                                                            "    tabs.setActiveTab(P1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick",
+                                                    "designerId": "da2526ac-b07b-4103-bda7-4045a7695aca"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "1.筛选，查看或导出求职者简历信息。"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "ebfb8118-bdb8-4081-97ef-0fc846bf3389"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "2.将合适的人才推荐给相关公司。"
+                                            },
+                                            "name": "MyLabel4",
+                                            "designerId": "33b4481b-dc84-4c69-b5d3-b1e79d51881b"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyStyle": [
+                                    "'background:#DFFFDF; padding:10px;'"
+                                ],
+                                "height": "100%",
+                                "layout": "table",
+                                "title": "",
+                                "width": "33%"
+                            },
+                            "name": "MyPanel20",
+                            "designerId": "14b43e25-8a5a-460e-95fc-93d7a0a7d5b8",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.FieldSet",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|columns": 3,
+                                        "height": 300,
+                                        "layout": "table",
+                                        "title": "企业信息",
+                                        "width": 280
+                                    },
+                                    "name": "MyFieldSet6",
+                                    "designerId": "8cf2a766-c70d-4590-b6db-d13f6d9e8181",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "s_icon_item_book",
+                                                "layout|colspan": 3,
+                                                "text": "企业信息",
+                                                "width": 98
+                                            },
+                                            "name": "MyButton15",
+                                            "designerId": "faedd563-69ad-45ca-af26-f15dff7e1c0d",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick1",
+                                                        "implHandler": [
+                                                            "         var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                                                            "         var P1 = Ext.ComponentQuery.query('#ComInfo')[0];",
+                                                            "            if(!P1){",
+                                                            "               P1 = Ext.create('sion.social.recruit.view.ComInfo');",
+                                                            "               P1.iconCls = button.iconCls;",
+                                                            "               P1.title= button.text;",
+                                                            "               P1.closable = true;",
+                                                            "               tabs.add(P1);",
+                                                            "            }",
+                                                            "            tabs.setActiveTab(P1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick1",
+                                                    "designerId": "054e43b2-5785-4ecf-8c37-7a008ec1713a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "1.筛选和查看企业详细信息。"
+                                            },
+                                            "name": "MyLabel1",
+                                            "designerId": "7542bfe9-9f88-4f21-9a8b-4d55bf76607d"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "2.将普通企业推荐为重点企业。"
+                                            },
+                                            "name": "MyLabel5",
+                                            "designerId": "06da188c-392f-4f39-9c07-e2deae7ddded"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "s_icon_file_star",
+                                                "layout|colspan": 3,
+                                                "text": "重点企业",
+                                                "width": 98
+                                            },
+                                            "name": "MyButton17",
+                                            "designerId": "5dda7f80-f6e4-4007-8b7e-6a9fd97cb0b7",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick2",
+                                                        "implHandler": [
+                                                            "                 var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                                                            "                 var P1 = Ext.ComponentQuery.query('#PointCom')[0];",
+                                                            "                    if(!P1){",
+                                                            "                       P1 = Ext.create('sion.social.recruit.view.PointCom');",
+                                                            "                       P1.iconCls = button.iconCls;",
+                                                            "                       P1.title= button.text;",
+                                                            "                       P1.closable = true;",
+                                                            "                       tabs.add(P1);",
+                                                            "                    }",
+                                                            "                    tabs.setActiveTab(P1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick2",
+                                                    "designerId": "e601bc4c-3820-4725-b666-8b9f351f151a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "1.筛选和查看重点企业详细信息。"
+                                            },
+                                            "name": "MyLabel3",
+                                            "designerId": "e77f3b01-736b-4190-9338-c0129db9deea"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "2.取消重点企业的推荐。"
+                                            },
+                                            "name": "MyLabel6",
+                                            "designerId": "07172e27-236d-427b-91b0-b81365de7589"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "s_icon_file_edit",
+                                                "layout|colspan": 3,
+                                                "text": "未审批企业"
+                                            },
+                                            "name": "MyButton18",
+                                            "designerId": "a4186c76-be9a-4d9d-84c8-75efb5ce959a",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick3",
+                                                        "implHandler": [
+                                                            "         var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                                                            "         var P1 = Ext.ComponentQuery.query('#ComWait')[0];",
+                                                            "            if(!P1){",
+                                                            "               P1 = Ext.create('sion.social.recruit.view.ComWait');",
+                                                            "               P1.iconCls = button.iconCls;",
+                                                            "               P1.title= button.text;",
+                                                            "               P1.closable = true;",
+                                                            "               tabs.add(P1);",
+                                                            "            }",
+                                                            "            tabs.setActiveTab(P1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick3",
+                                                    "designerId": "6aa26637-07f3-4760-87bc-93acf6927833"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "1.查看和审批企业的注册信息。"
+                                            },
+                                            "name": "MyLabel2",
+                                            "designerId": "e2b73ee8-93d7-47e4-aaad-6c3a8f41fd28"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "2.将未审批的注册企业信息批量Excel导出。"
+                                            },
+                                            "name": "MyLabel7",
+                                            "designerId": "3d683d6b-53c9-4bd0-836a-4daf8572835a"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "iconCls": "s_icon_file_error",
+                                                "layout|colspan": 3,
+                                                "text": "未通过企业"
+                                            },
+                                            "name": "MyButton16",
+                                            "designerId": "0efdcc98-8ef2-49ce-98a2-b4e2893bed55",
+                                            "cn": [
+                                                {
+                                                    "type": "basiceventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick4",
+                                                        "implHandler": [
+                                                            " var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                                                            "         var P1 = Ext.ComponentQuery.query('#ComNoPass')[0];",
+                                                            "            if(!P1){",
+                                                            "               P1 = Ext.create('sion.social.recruit.view.ComNoPass');",
+                                                            "               P1.iconCls = button.iconCls;",
+                                                            "               P1.title= button.text;",
+                                                            "               P1.closable = true;",
+                                                            "               tabs.add(P1);",
+                                                            "            }",
+                                                            "            tabs.setActiveTab(P1);"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick4",
+                                                    "designerId": "53d9ac00-76f4-467e-b2b8-0088d8947d6c"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "1.查看未通过审批的企业信息。"
+                                            },
+                                            "name": "MyLabel",
+                                            "designerId": "16d4556a-4314-453f-a8e7-3d304446d5f3"
+                                        },
+                                        {
+                                            "type": "Ext.form.Label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|colspan": 3,
+                                                "text": "2.再次审批未通的企业。"
+                                            },
+                                            "name": "MyLabel8",
+                                            "designerId": "95404b8a-12a3-4790-9eb0-584c102ae503"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyStyle": [
+                                    "'background:#ACD6FF; padding:10px;'"
+                                ],
+                                "height": "100%",
+                                "layout": "table",
+                                "title": "",
+                                "width": "33%"
+                            },
+                            "name": "MyPanel21",
+                            "designerId": "276dbf67-0780-4756-9f14-e2edae9239f9",
+                            "cn": [
+                                {
+                                    "type": "Ext.view.View",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemSelector": "div"
+                                    },
+                                    "name": "MyView",
+                                    "designerId": "80040e82-b873-466d-a465-6787eee991de",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.XTemplate",
+                                            "reference": {
+                                                "name": "itemTpl",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "itemTpl",
+                                                "implHandler": [
+                                                    "Data View Item {string}"
+                                                ]
+                                            },
+                                            "name": "itemTpl",
+                                            "designerId": "75665038-05fe-45b3-8053-8e4b5a16dd63"
+                                        },
+                                        {
+                                            "type": "processcfgfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "config"
+                                                ],
+                                                "fn": "processMyView",
+                                                "implHandler": [
+                                                    "return config;"
+                                                ]
+                                            },
+                                            "name": "processMyView",
+                                            "designerId": "4cbd2f60-0f31-4796-b251-d292fc665b72"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "viewName",
+                    "iconClass",
+                    "text"
+                ],
+                "fn": "openPanelTab",
+                "implHandler": [
+                    "var tabs = Ext.ComponentQuery.query('#MyTabPanel')[0];",
+                    "                 var P1 = Ext.ComponentQuery.query('#'+viewName)[0];",
+                    "                    if(!P1){",
+                    "                       P1 = Ext.create(this.getNamespace()+'.view.'+viewName);",
+                    "                       P1.iconCls = iconClass;",
+                    "                       P1.title= text;",
+                    "                       P1.closable = true;",
+                    "                       tabs.add(P1);",
+                    "                    }",
+                    "                    tabs.setActiveTab(P1);"
+                ]
+            },
+            "name": "openPanelTab",
+            "designerId": "4b7deaaf-4c03-4e1b-8680-6bf5875c5fb3"
+        }
+    ]
+}

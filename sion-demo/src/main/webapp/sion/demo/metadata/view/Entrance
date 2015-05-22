@@ -1,0 +1,57 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "Entrance",
+        "designer|userClassName": "Entrance",
+        "height": 800,
+        "iconCls": "s_icon_org_gear",
+        "layout": "fit",
+        "maximizable": true,
+        "minimizable": true,
+        "title": "例子学习",
+        "width": 1425
+    },
+    "name": "MyWindow",
+    "designerId": "513938e8-3109-49de-8447-f15fc40386ac",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "iconCls": ""
+            },
+            "name": "panelinentrance1",
+            "designerId": "14e204fb-8f99-47bb-9c82-71b3ef8255ca",
+            "masterInstanceId": "56922a1e-1dc5-4560-b448-ced435bf6cbd"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowResize",
+                "implHandler": [
+                    "//panel大小随着window变化",
+                    "//var panel = window.down('Panel');",
+                    "//panel.setSize(width, height-35);"
+                ],
+                "name": "resize",
+                "scope": "me"
+            },
+            "name": "onWindowResize",
+            "designerId": "a5f8e37e-e352-495e-a2d1-bd750bcac50c"
+        }
+    ]
+}

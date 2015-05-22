@@ -1,0 +1,178 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "User",
+        "height": 250,
+        "title": "人员信息",
+        "width": 400
+    },
+    "name": "MyPanel",
+    "designerId": "0b121918-9baf-4723-8a96-f71d9034aaed",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar",
+            "designerId": "bc05175b-0fa8-4524-90da-de61777cd58c",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "s_icon_user_add",
+                        "layout|flex": null,
+                        "text": "新增"
+                    },
+                    "name": "MyButton",
+                    "designerId": "57309b03-5ad8-4427-8311-2a19caa25c05",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    userMain = Ext.create(me.getNs()+'.view.UserMain');",
+                                    "userMain.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "312cabd5-43f8-4d0e-9ee5-1b9cb099b396"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "s_icon_user_delete",
+                        "layout|flex": null,
+                        "text": "删除"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "68fed8bc-69f4-42b6-b09d-2e86cab9575d",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick1",
+                            "designerId": "286d955c-75d3-492f-94fd-c4754f20ce31"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "store": "User",
+                "title": null
+            },
+            "name": "MyGridPanel",
+            "designerId": "1a86a921-9a59-438f-8605-ec2b67d92cf8",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "text": "姓名"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "07dead6a-9ae8-4c40-a402-8878aa53142d"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView",
+                    "designerId": "b5a651b6-f230-4d0a-82a3-9d40735ec00a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "age",
+                        "text": "年龄"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "5d99c5cd-10b0-40b3-ab91-97af26e8db84"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelItemDblClick",
+                        "implHandler": [
+                            "var me = this,",
+                            "    userMain = Ext.create(me.getNs()+'.view.UserMain',{",
+                            "        _user: record",
+                            "    });",
+                            "userMain.show();"
+                        ],
+                        "name": "itemdblclick",
+                        "scope": "me"
+                    },
+                    "name": "onGridpanelItemDblClick",
+                    "designerId": "ba8b0167-2332-4894-83d0-8fca2a3cd7f4"
+                }
+            ]
+        }
+    ]
+}

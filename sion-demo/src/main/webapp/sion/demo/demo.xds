@@ -1,0 +1,65 @@
+{
+    "name": "demo",
+    "settings": {
+        "cmd": {
+            "license": "commercial"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:8080/sion-demo",
+        "exportPath": "D:/dev/SpringToolSuite/vfabric-tc-server-developer-2.9.5.SR1/new/wtpwebapps/sion-demo/sion/demo",
+        "projectHasEnabledWebServer": false,
+        "lockUrlPrefix": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "spacesToIndent": 4,
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "installStatus": "Not Installed",
+        "displayfield-ExtBox1-1120-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1121-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1122-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1385-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1113-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1125-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1132-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1187-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1145-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1200-inputEl": "a new version of the framework is available"
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 75,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "513938e8-3109-49de-8447-f15fc40386ac",
+            "f7bedf8d-6d97-470a-85d1-5577992e4f6e",
+            "d47157ea-6bb5-4554-8eb6-15ba53c1be3c",
+            "56922a1e-1dc5-4560-b448-ced435bf6cbd",
+            "0b121918-9baf-4723-8a96-f71d9034aaed",
+            "f33168b6-3748-4c47-b052-505331055018"
+        ],
+        "store": [
+            "9128a879-6c18-42c5-8e61-8359b26c4f5b"
+        ],
+        "controller": [],
+        "model": [
+            "b0ff50fc-27d2-42cb-8013-736fa78df9c4"
+        ],
+        "resource": [
+            "03791aaf-84a7-492a-990d-f27af51404be"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "User"
+    },
+    "name": "MyModel",
+    "designerId": "b0ff50fc-27d2-42cb-8013-736fa78df9c4",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField",
+            "designerId": "eee26548-4565-4d5d-ba3a-dc0a53e349e9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "MyField1",
+            "designerId": "e81f2559-41af-4e88-a9ae-f159d577a8dd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "age"
+            },
+            "name": "MyField2",
+            "designerId": "e321b545-e0ef-4e55-929a-15d99a4fb09d"
+        },
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{",
+                    "create: 'demo/user/save',",
+                    "update: 'demo/user/update',",
+                    "read: 'demo/user/read',",
+                    "destroy: 'demo/user/destroy'",
+                    "",
+                    "}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "b7b74ad2-31dd-412e-aed6-5bf2aed7c5ea",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "root": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "ba87730d-68d7-457d-a8ff-c905045338a1"
+                }
+            ]
+        }
+    ]
+}

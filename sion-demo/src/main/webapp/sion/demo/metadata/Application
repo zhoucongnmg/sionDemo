@@ -1,0 +1,59 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "User"
+        ],
+        "name": "sion.demo",
+        "paths": [
+            "{",
+            "'sion.demo':'sion/demo/app'",
+            "}"
+        ],
+        "stores": [
+            "User"
+        ],
+        "views": [
+            "Entrance",
+            "User",
+            "UserMain"
+        ]
+    },
+    "name": "Application",
+    "configAlternates": {
+        "path": "object",
+        "paths": "object"
+    },
+    "designerId": "application",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "paths",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "var win = Ext.create('sion.demo.view.Entrance');",
+                    "win.show();"
+                ]
+            },
+            "name": "launch",
+            "designerId": "7d92b228-1ae9-4047-982e-e4a88b227360"
+        }
+    ]
+}
