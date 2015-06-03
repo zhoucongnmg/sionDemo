@@ -25,6 +25,7 @@ public class TestController {
 	
 	@RequestMapping(value = "/user/save")
 	public @ResponseBody Response save(HttpSession session, @RequestBody User user) {
+		System.out.println("111");
 		System.out.println(user);
 		user.setId(StringUtils.isBlank(user.getId()) ? null : user.getId());
 		mongoOps.save(user);
