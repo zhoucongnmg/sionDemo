@@ -20,20 +20,6 @@
     "designerId": "513938e8-3109-49de-8447-f15fc40386ac",
     "cn": [
         {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "iconCls": ""
-            },
-            "name": "panelinentrance1",
-            "designerId": "14e204fb-8f99-47bb-9c82-71b3ef8255ca",
-            "masterInstanceId": "56922a1e-1dc5-4560-b448-ced435bf6cbd"
-        },
-        {
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -52,6 +38,17 @@
             },
             "name": "onWindowResize",
             "designerId": "a5f8e37e-e352-495e-a2d1-bd750bcac50c"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "mypanel1",
+            "designerId": "647e5406-717b-4b29-9157-6886cbf4d14e",
+            "masterInstanceId": "8a3cd64c-c12f-436f-8d85-03ab646a6e10"
         }
     ]
 }

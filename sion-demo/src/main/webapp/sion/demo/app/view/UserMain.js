@@ -41,6 +41,7 @@ Ext.define('sion.demo.view.UserMain', {
                         {
                             xtype: 'textfield',
                             anchor: '100%',
+                            hidden: true,
                             fieldLabel: 'Label',
                             name: 'id'
                         },

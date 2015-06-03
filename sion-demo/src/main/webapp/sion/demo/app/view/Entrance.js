@@ -18,7 +18,7 @@ Ext.define('sion.demo.view.Entrance', {
     alias: 'widget.Entrance',
 
     requires: [
-        'sion.demo.view.PanelInEntrance',
+        'sion.demo.view.MyPanel',
         'Ext.panel.Panel'
     ],
 
@@ -34,18 +34,17 @@ Ext.define('sion.demo.view.Entrance', {
         var me = this;
 
         Ext.applyIf(me, {
-            items: [
-                {
-                    xtype: 'Panel',
-                    iconCls: ''
-                }
-            ],
             listeners: {
                 resize: {
                     fn: me.onWindowResize,
                     scope: me
                 }
-            }
+            },
+            items: [
+                {
+                    xtype: 'mypanel'
+                }
+            ]
         });
 
         me.callParent(arguments);

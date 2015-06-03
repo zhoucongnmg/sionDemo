@@ -37,6 +37,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Label",
+                        "hidden": true,
                         "layout|anchor": "100%",
                         "name": "id"
                     },

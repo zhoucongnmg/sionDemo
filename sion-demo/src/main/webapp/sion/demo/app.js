@@ -32,7 +32,8 @@ Ext.application({
     views: [
         'Entrance',
         'User',
-        'UserMain'
+        'UserMain',
+        'MyPanel'
     ],
     name: 'sion.demo',
 

@@ -1,0 +1,50 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mypanel",
+        "designer|userClassName": "MyPanel",
+        "header": false,
+        "height": null,
+        "layout": "border",
+        "title": "My Panel",
+        "width": null
+    },
+    "name": "MyPanel",
+    "designerId": "8a3cd64c-c12f-436f-8d85-03ab646a6e10",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west"
+            },
+            "name": "autonav1",
+            "designerId": "0538f7b6-e52d-42f0-b39d-8f4dacef2a86",
+            "masterInstanceId": "f7bedf8d-6d97-470a-85d1-5577992e4f6e"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "width": null
+            },
+            "name": "maintabpanel1",
+            "designerId": "c0d46e1a-4fd5-48d9-a09a-e8fc5448a463",
+            "masterInstanceId": "d47157ea-6bb5-4554-8eb6-15ba53c1be3c"
+        }
+    ]
+}
