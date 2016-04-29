@@ -1,0 +1,238 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "EmployEdit",
+        "height": 273,
+        "modal": true,
+        "title": "信息编辑",
+        "width": 410
+    },
+    "name": "MyWindow",
+    "designerId": "2ac6729e-7b79-41ca-a94d-f1739afbab53",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 208,
+                "title": ""
+            },
+            "name": "MyForm1",
+            "designerId": "8f47222e-544d-4115-afb1-d5a0d86f893c",
+            "cn": [
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top"
+                    },
+                    "name": "MyToolbar3",
+                    "designerId": "2761c4ab-8098-489c-ab7e-9bbcef9dec87",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "iconCls": "",
+                                "layout|flex": null,
+                                "text": "保存"
+                            },
+                            "name": "MyButton5",
+                            "designerId": "8eae4c0e-8607-45fd-9db7-fb2555eb5e75",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "var me = this,",
+                                            "    form = me.down('form'),",
+                                            "    emp = form.getRecord();",
+                                            "form.updateRecord(emp);",
+                                            "emp.save();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "1aadac82-c6bb-4306-9372-f0b8d633fc14"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Label",
+                        "hidden": true,
+                        "layout|anchor": "100%",
+                        "name": "id"
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "cd0c8679-552d-45f2-97a7-5553badf1d75"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "姓名",
+                        "layout|anchor": "100%",
+                        "name": "name"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "4b40ca5f-c972-4d6d-a3ff-e5c15b2c589d"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "年龄",
+                        "layout|anchor": "100%",
+                        "name": "age"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "ae6fdffd-2ace-4e71-96c6-6ce23aa84618"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "性别"
+                    },
+                    "name": "MyRadioGroup",
+                    "designerId": "5511732f-6b61-465e-8df1-55e77f4e230d",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "男",
+                                "checked": true,
+                                "fieldLabel": null,
+                                "inputValue": "男",
+                                "name": "sex"
+                            },
+                            "name": "MyRadio",
+                            "designerId": "835231af-dfac-4932-a64a-277fef704e10"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "女",
+                                "fieldLabel": null,
+                                "inputValue": "女",
+                                "name": "sex"
+                            },
+                            "name": "MyRadio1",
+                            "designerId": "da9eb95b-1c42-4fbb-be6d-d9f405781b7a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "邮箱",
+                        "layout|anchor": "100%",
+                        "name": "email"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "422f7dbd-a562-4341-b3e6-58508abdac73"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "住址",
+                        "layout|anchor": "100%",
+                        "name": "address"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "cc447d98-f514-4362-bc9e-e2fe8ec3eed4"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowBeforeRender",
+                "implHandler": [
+                    "var me = this,",
+                    "    form = me.down('form'),",
+                    "    emp = me._emp;",
+                    "if (!emp) {",
+                    "    emp = Ext.create(me.getNs()+'.model.EmployInfo');",
+                    "}",
+                    "form.loadRecord(emp);"
+                ],
+                "name": "beforerender",
+                "scope": "me"
+            },
+            "name": "onWindowBeforeRender",
+            "designerId": "4c7d4416-5df8-49dc-89d2-b99f5da5f68c"
+        }
+    ]
+}

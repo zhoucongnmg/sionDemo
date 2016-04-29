@@ -1,0 +1,321 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "EmployInfo",
+        "height": 443,
+        "layout": "fit",
+        "title": "员工信息",
+        "width": 483
+    },
+    "name": "MyWindow",
+    "designerId": "2d3e5d86-6517-4de6-964f-6339c82a08c5",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "layout": "fit",
+                "title": ""
+            },
+            "name": "MyPanel3",
+            "designerId": "ba87451c-ee30-4051-800d-37ab00a3e010",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "姓名",
+                        "name": "name"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "53cab6c9-b076-46d7-ace2-49b56cc99119"
+                }
+            ]
+        },
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "name": "MyToolbar2",
+            "designerId": "4e19834c-c959-40b2-b65b-dbdcac8247d2",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "text": "查询"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "13d51be4-da51-4e41-a31c-7eeed170eab4",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick2",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    grid = me.down('grid'),",
+                                    "    name = me.down(\"textfield\");",
+                                    "",
+                                    "",
+                                    "// grid.getStore().load({",
+                                    "//     params:{",
+                                    "//         name:name.getValue()",
+                                    "//     },",
+                                    "//     url:\"demo/emp/query\",",
+                                    "//     callback: function(resp){",
+                                    "//         console.log(resp);",
+                                    "//     }",
+                                    "// });",
+                                    "",
+                                    "Ext.Ajax.request({",
+                                    "    url:\"demo/emp/query\",",
+                                    "    params: {",
+                                    "        name:name.getValue()",
+                                    "    },",
+                                    "    method:\"post\",",
+                                    "    success:function(response){",
+                                    "        var grid = me.down(\"gridpanel\");",
+                                    "        var records = Ext.JSON.decode(response.responseText);",
+                                    "        grid.getStore().loadData(records);   ",
+                                    "    }",
+                                    "});"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick2",
+                            "designerId": "a9bfc7fd-08d0-4c0a-8c28-1bdc48f10215"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "s_icon_user_add",
+                        "layout|flex": null,
+                        "text": "新增"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "949f4c87-f5cd-43f6-9494-8f2171509628",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "var me = this,",
+                                    "    emp = Ext.create(me.getNs()+'.view.EmployEdit');",
+                                    "emp.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick",
+                            "designerId": "79b54c41-01c6-495e-b8ac-1ed8e5afe59f"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "s_icon_user_delete",
+                        "layout|flex": null,
+                        "text": "删除"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "74c10a54-1394-4fa3-b65d-0f1f362360be",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onButtonClick1",
+                                "implHandler": [
+                                    "var me =this,",
+                                    "grid = me.down('gridpanel'),",
+                                    "record=grid.getSelectionModel().getLastSelected();",
+                                    "record.destroy();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "name": "onButtonClick1",
+                            "designerId": "cd6ca355-ccca-4b8a-bc38-fe4b042a45f2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoScroll": true,
+                "dock": null,
+                "store": "EmployInfo",
+                "title": ""
+            },
+            "name": "MyGridPanel1",
+            "designerId": "17edb153-bd0a-403a-84f5-9f214ff4211b",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "name",
+                        "text": "姓名"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "532de139-8382-475c-8a9e-1cf04a299c94"
+                },
+                {
+                    "type": "Ext.grid.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyGridView1",
+                    "designerId": "8ed8d5df-91b8-467f-aeb8-6ab92fbeaad4"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "age",
+                        "text": "年龄"
+                    },
+                    "name": "MyColumn3",
+                    "designerId": "cf9d6331-d14d-403e-9bc8-2f41f5194129"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "sex",
+                        "text": "性别"
+                    },
+                    "name": "MyColumn4",
+                    "designerId": "a95cb6fc-9ad7-483a-a6f2-4a7101462402"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "email",
+                        "text": "邮箱"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "c36a5744-a739-4990-bc3c-68dde7c75ffb"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "address",
+                        "text": "住址"
+                    },
+                    "name": "MyColumn6",
+                    "designerId": "c9405252-75df-4646-9714-c34a98b745dd"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelItemDblClick",
+                        "implHandler": [
+                            "var me = this,",
+                            "    emp = Ext.create(me.getNs()+'.view.EmployEdit',{",
+                            "        _emp: record",
+                            "    });",
+                            "emp.show();"
+                        ],
+                        "name": "itemdblclick",
+                        "scope": "me"
+                    },
+                    "name": "onGridpanelItemDblClick",
+                    "designerId": "03462447-91f2-4ae1-a043-9024387edec9"
+                }
+            ]
+        }
+    ]
+}

@@ -13,7 +13,7 @@
             }
         },
         "urlPrefix": "http://localhost:8080/sion-demo",
-        "exportPath": "D:/dev/SpringToolSuite/vfabric-tc-server-developer-2.9.5.SR1/new/wtpwebapps/sion-demo/sion/demo",
+        "exportPath": "D:/Program Files/SpringToolSuite/vfabric-tc-server-developer-2.9.5.SR1/cloudatlas/wtpwebapps/sion-demo/sion/demo",
         "projectHasEnabledWebServer": false,
         "lockUrlPrefix": false,
         "buildShouldOverwriteIndex": true,
@@ -32,10 +32,11 @@
         "displayfield-ExtBox1-1132-inputEl": "a new version of the framework is available",
         "displayfield-ExtBox1-1187-inputEl": "a new version of the framework is available",
         "displayfield-ExtBox1-1145-inputEl": "a new version of the framework is available",
-        "displayfield-ExtBox1-1200-inputEl": "a new version of the framework is available"
+        "displayfield-ExtBox1-1200-inputEl": "a new version of the framework is available",
+        "displayfield-ExtBox1-1222-inputEl": "a new version of the framework is available"
     },
     "xdsVersion": "3.2.0",
-    "xdsBuild": 193,
+    "xdsBuild": 339,
     "schemaVersion": 1,
     "upgradeVersion": 310000000001,
     "framework": "ext42",
@@ -46,14 +47,19 @@
             "d47157ea-6bb5-4554-8eb6-15ba53c1be3c",
             "0b121918-9baf-4723-8a96-f71d9034aaed",
             "f33168b6-3748-4c47-b052-505331055018",
-            "8a3cd64c-c12f-436f-8d85-03ab646a6e10"
+            "8a3cd64c-c12f-436f-8d85-03ab646a6e10",
+            "54a3f26e-09ed-4fae-bec7-3010c45a764a",
+            "2d3e5d86-6517-4de6-964f-6339c82a08c5",
+            "2ac6729e-7b79-41ca-a94d-f1739afbab53"
         ],
         "store": [
-            "9128a879-6c18-42c5-8e61-8359b26c4f5b"
+            "9128a879-6c18-42c5-8e61-8359b26c4f5b",
+            "8a9443e9-9c2a-4f6c-9021-f05d99a3d96b"
         ],
         "controller": [],
         "model": [
-            "b0ff50fc-27d2-42cb-8013-736fa78df9c4"
+            "b0ff50fc-27d2-42cb-8013-736fa78df9c4",
+            "eef6e5f7-f979-4ac4-8a43-9853eb0be278"
         ],
         "resource": [
             "03791aaf-84a7-492a-990d-f27af51404be"

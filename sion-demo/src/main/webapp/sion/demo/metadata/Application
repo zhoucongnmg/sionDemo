@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "User"
+            "User",
+            "EmployInfo"
         ],
         "name": "sion.demo",
         "paths": [
@@ -16,13 +17,17 @@
             "}"
         ],
         "stores": [
-            "User"
+            "User",
+            "EmployInfo"
         ],
         "views": [
             "Entrance",
             "User",
             "UserMain",
-            "MyPanel"
+            "MyPanel",
+            "UserWin",
+            "EmployInfo",
+            "EmployEdit"
         ]
     },
     "name": "Application",
@@ -49,7 +54,8 @@
             "userConfig": {
                 "fn": "launch",
                 "implHandler": [
-                    ""
+                    "",
+                    "Ext.create('sion.demo.view.EmployInfo').show();"
                 ]
             },
             "name": "launch",

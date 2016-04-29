@@ -1,0 +1,16 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "EmployInfo",
+        "model": "EmployInfo",
+        "storeId": "EmployInfo"
+    },
+    "name": "MyStore",
+    "designerId": "8a9443e9-9c2a-4f6c-9021-f05d99a3d96b"
+}

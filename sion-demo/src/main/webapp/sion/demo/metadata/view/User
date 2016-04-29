@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
+        "designer|userAlias": "user1",
         "designer|userClassName": "User",
         "height": 250,
         "title": "人员信息",
@@ -14,6 +14,13 @@
     },
     "name": "MyPanel",
     "designerId": "0b121918-9baf-4723-8a96-f71d9034aaed",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "pro",
+            "type": "string"
+        }
+    ],
     "cn": [
         {
             "type": "Ext.toolbar.Toolbar",
@@ -95,6 +102,31 @@
                             },
                             "name": "onButtonClick1",
                             "designerId": "286d955c-75d3-492f-94fd-c4754f20ce31"
+                        },
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyMenu",
+                            "designerId": "4e6026c6-e432-4760-8c9e-92cfef951bd4",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "name": "MyMenuItem",
+                                    "designerId": "721b3932-6455-445b-9652-6f9923286fca"
+                                }
+                            ]
                         }
                     ]
                 }

@@ -1,0 +1,37 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UserWin",
+        "height": 546,
+        "layout": "fit",
+        "title": "",
+        "width": 693
+    },
+    "name": "MyWindow1",
+    "designerId": "54a3f26e-09ed-4fae-bec7-3010c45a764a",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "pro",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "user3",
+            "designerId": "94c26055-65d5-42d6-9809-2e8c88ac762f",
+            "masterInstanceId": "0b121918-9baf-4723-8a96-f71d9034aaed"
+        }
+    ]
+}

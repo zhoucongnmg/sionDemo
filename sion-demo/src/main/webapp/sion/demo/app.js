@@ -24,21 +24,27 @@ Ext.application({
         'sion.demo': 'sion/demo/app'
     },
     models: [
-        'User'
+        'User',
+        'EmployInfo'
     ],
     stores: [
-        'User'
+        'User',
+        'EmployInfo'
     ],
     views: [
         'Entrance',
         'User',
         'UserMain',
-        'MyPanel'
+        'MyPanel',
+        'UserWin',
+        'EmployInfo',
+        'EmployEdit'
     ],
     name: 'sion.demo',
 
     launch: function() {
-        Ext.create('sion.demo.view.User', {renderTo: Ext.getBody()});
+
+        Ext.create('sion.demo.view.EmployInfo').show();
     }
 
 });

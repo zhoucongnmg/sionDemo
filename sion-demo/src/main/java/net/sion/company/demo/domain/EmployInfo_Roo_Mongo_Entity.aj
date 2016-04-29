@@ -3,11 +3,11 @@
 
 package net.sion.company.demo.domain;
 
-import net.sion.company.demo.domain.User;
+import net.sion.company.demo.domain.EmployInfo;
 import org.springframework.data.annotation.Persistent;
 
-privileged aspect User_Roo_Mongo_Entity {
+privileged aspect EmployInfo_Roo_Mongo_Entity {
     
-    declare @type: User: @Persistent;
+    declare @type: EmployInfo: @Persistent;
     
 }

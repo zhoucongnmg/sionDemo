@@ -15,10 +15,13 @@
 
 Ext.define('sion.demo.view.User', {
     extend: 'Ext.panel.Panel',
+    alias: 'widget.user1',
 
     requires: [
         'Ext.toolbar.Toolbar',
         'Ext.button.Button',
+        'Ext.menu.Menu',
+        'Ext.menu.Item',
         'Ext.grid.Panel',
         'Ext.grid.column.Column',
         'Ext.grid.View'
@@ -57,6 +60,15 @@ Ext.define('sion.demo.view.User', {
                                     fn: me.onButtonClick1,
                                     scope: me
                                 }
+                            },
+                            menu: {
+                                xtype: 'menu',
+                                items: [
+                                    {
+                                        xtype: 'menuitem',
+                                        text: 'Menu Item'
+                                    }
+                                ]
                             }
                         }
                     ]
